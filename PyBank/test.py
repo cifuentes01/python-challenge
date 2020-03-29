@@ -64,16 +64,13 @@ with open(budgetdatapath) as csvbudgetfile:
         if changeitem < 0 and changeitem < decrease:
             decrease = changeitem
 
-    #append results to analysis list to write in the output file
     analysis.append(num_of_row)      
     analysis.append('${:,.0f}'.format(profitloss))    
     analysis.append('${:,.2f}'.format((sum_changes / (num_of_row - 1))))
     analysis.append('${:,.0f}'.format(increase))
     analysis.append('${:,.0f}'.format(decrease))
 
-    #print results
-    print("Financial Analysis")
-    print("-------------------------------------------------------")
+
     print(f"Total Months: {(num_of_row)}")
     print(f"Total: {'${:,.0f}'.format(profitloss)}")
     print(f"Average  Change: {'${:,.2f}'.format(sum_changes / (num_of_row -1 ))}")
@@ -85,7 +82,7 @@ with open(budgetdatapath) as csvbudgetfile:
 cleaned_csv = zip(title, analysis)
 
 # Set variable for output file
-output_file = os.path.join("output_PyBank.csv")
+output_file = os.path.join("Output_PyBank.csv")
 
 #  Open the output file
 with open(output_file, "w") as datafile:
