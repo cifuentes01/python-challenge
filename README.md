@@ -5,7 +5,6 @@
 
 Applying Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
-![Equator](Images/equatorsign.png)
 
 ## Part I - WeatherPy
 
@@ -42,15 +41,11 @@ Applying jupyter-gmaps and the Google Places API to plan future vacations.
 
 * Heat map that displays the humidity for every city from the part I.
 
-  ![heatmap](Images/heatmap.png)
-
 * Narrow down the DataFrame to find the ideal weather condition.
 
 * Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
 
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
-
-  ![hotel map](Images/hotel_map.png)
 
 
 ### Copyright
